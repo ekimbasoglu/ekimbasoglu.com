@@ -13,13 +13,13 @@
     @apply font-bold text-lg pt-[2px] pr-1.5 pl-1.5 text-black border-b-2 border-solid bg-gray-100 font-bold dark:bg-gray-900 dark:text-white;
   }
   .nav-link {
-    @apply flex items-center h-10 rounded px-3 text-sm text-prototurk font-medium hover:bg-gray-100 transition-colors dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white;
+    @apply flex items-center h-10 rounded px-3 text-sm text-main font-medium hover:bg-gray-100 transition-colors dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white;
   }
   .nav-link.active {
-    @apply bg-prototurk text-white;
+    @apply bg-main text-white;
   }
   .modal {
-    @apply fixed inset-0 bg-prototurk/60 flex items-center justify-center opacity-0 invisible transition-opacity z-50;
+    @apply fixed inset-0 bg-main/60 flex items-center justify-center opacity-0 invisible transition-opacity z-50;
   }
   .modal.active {
     @apply visible opacity-100;
