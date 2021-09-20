@@ -29,9 +29,6 @@ module.exports = {
     },
   },
   variants: {
-    extend: {
-      listStyleType: ['square', 'inside']
-    },
   },
   plugins: [
     plugin(function ({ addUtilities, theme, e }) {
