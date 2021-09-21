@@ -1,6 +1,4 @@
-# ekimbasoglu.rs
-
-## https://ekimbasoglu-rs.netlify.app/
+# ekimbasoglu.rs  |  https://ekimbasoglu-rs.netlify.app/
 
 ## Requirements
 For development, you will need Node.js & Tailwindcss installed on your environement.
