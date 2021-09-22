@@ -4,6 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
+    "start": "nodemon app.js",
     "watch": "npx tailwindcss -i tailwind.css -o src/style.css -w --minify",
     "build": "npx tailwindcss -i tailwind.css -o src/style.css --minify"
   },
@@ -11,6 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "multiparty": "^4.2.2",
+    "nodemailer": "^6.6.3",
     "tailwindcss": "^2.2.15"
   }
 }
