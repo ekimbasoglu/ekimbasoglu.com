@@ -67,9 +67,7 @@ app.route("/contact").get((req, res) => {
 app.route("/projects").get((req, res) => {
     res.sendFile('projects.html');
 });
-app.route("/success").get((req, res) => {
-    res.sendFile('success.html');
-});
+
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}...`);
