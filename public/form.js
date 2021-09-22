@@ -7,7 +7,7 @@ const formEvent = form.addEventListener("submit", (event) => {
 });
 
 const sendMail = (mail) => {
-    fetch("https://ekimbasoglu-rs.netlify.app/send", {
+    fetch("http://ekimbasoglurs.herokuapp.com/send", {
         method: "post",
         body: mail,
     }).then((response) => {
