@@ -1,7 +1,9 @@
-# ekimbasoglu.rs  |  https://ekimbasoglu-rs.netlify.app
+# ekimbasoglu.com  |  https://www.ekimbasoglu.com
 
 ## Requirements
 For development, you will need Node.js & Tailwindcss installed on your environement.
+
+🚧In Progress - Angular
 
 ### Node
 
@@ -21,7 +23,7 @@ Tailwind CSS requires Node.js 12.13.0 or higher.
 
     $ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
     
-If everything when fine, you should run
+You should run;
 
     npm run build
     npm run watch
