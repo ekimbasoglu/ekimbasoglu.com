@@ -6,19 +6,19 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { AboutComponent } from './about/about.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
     MyProjectsComponent,
-    AboutComponent
+    AboutComponent,
+    HeaderComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, HeaderComponent],
+  exports: [HeaderComponent],
 })
-export class AppModule { }
+export class AppModule {}

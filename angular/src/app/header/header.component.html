@@ -1,0 +1,33 @@
+<div class="h-15 border-b flex-shrink-0 border-gray-100 dark:border-gray-700 w-full flex justify-between items-center px-3 lg:px-5 fixed bg-white ">
+  <a href="index.html" class="text-2xl p-2 font-medium inline-flex items-center text-main darkthemewhite">
+      Ekim Basoglu
+  </a>
+
+  <div class="flex calc-h-full-5 ">
+      <button class="flex items-center h-10 rounded text-xl p-5">
+          <span class="hidden lg:inline ml-3"><a href="./projects.html">My projects</a></span>
+      </button>
+      <button class="flex items-center h-10  rounded text-xl p-2">
+          <span class="hidden lg:inline ml-3"><a href="./contact.html">Contact</a></span>
+      </button>
+  </div>
+</div>
+<br /><br /><br />
+
+<div class="hidden bottom-0 left-0 md:inline fixed">
+  <a onclick="darkMode()" class="font-bold text-base">[dark mode]</a>
+</div>
+
+<script>
+  if (localStorage.getItem('dark')) {
+      document.documentElement.classList.add('dark');
+  }
+  function darkMode() {
+      document.documentElement.classList.toggle('dark');
+      if (document.documentElement.classList.contains('dark')) {
+          localStorage.setItem('dark', true);
+      } else {
+          localStorage.removeItem('dark');
+      }
+  }
+</script>
