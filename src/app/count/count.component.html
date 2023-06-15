@@ -1,0 +1,8 @@
+<p id="count">error</p>
+<script>
+  const count = document.getElementById('count');
+  // Count
+fetch('API://heroku?countSoFar')
+  .then(res => res.json())
+  .then(data => {count.textContent = data.count})
+</script>
