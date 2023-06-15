@@ -1,0 +1,26 @@
+{
+  "name": "tailwind-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "start": "cd angular && ng build --prod",
+    "watch": "npx tailwindcss -i tailwind.css -o src/style.css -w --minify",
+    "build": "npx tailwindcss -i tailwind.css -o src/style.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "multiparty": "^4.2.2",
+    "nodemailer": "^6.6.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  }
+}
