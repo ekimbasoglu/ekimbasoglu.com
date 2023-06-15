@@ -4,7 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "start": "cd angular && ng serve --open",
+    "start": "cd angular && ng build --prod",
     "watch": "npx tailwindcss -i tailwind.css -o src/style.css -w --minify",
     "build": "npx tailwindcss -i tailwind.css -o src/style.css --minify"
   },
