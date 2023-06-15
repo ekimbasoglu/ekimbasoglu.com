@@ -15,14 +15,14 @@
           </div>
 
       <div class="font-bold mt-10 mb-5 p-3 border-b-4 border-solid border-black md:max-w-3xl md:text-xl dark:border-white">
-          <span class="text-2xl">💻 The Journey</span>
+          <span class="text-2xl darkthemewhite">💻 The Journey</span>
       </div>
 
-      <span class="font-bold text-xl mb-5 flex">Present</span>
+      <span class="font-bold text-xl mb-5 flex darkthemewhite">Present</span>
 
       <ul class="mt-1.5 list-none pl-0 ml-0 flex">
           <li>
-              <div class="flex flex-1 mb-5 justify-between">
+              <div class="flex flex-1 mb-5 justify-between darkthemewhite">
                   <span role="img" aria-label="computer">💻 <strong><a href="https://osf.digital/">OSF Digital</a></strong> - Backend Developer <em class="text-gray-800 text-s dark:text-gray-400 pl-1">(2022 – 2023)</em>
                     <br />
                   📚 Software and Data Engineering student at <strong><a href="https://singidunum.ac.rs/">Singidunum University</a></strong><em class="text-gray-800 text-s dark:text-gray-400 pl-1">(2019 – 2023)</em>
@@ -31,9 +31,9 @@
           </li>
       </ul>
 
-      <span class="font-bold text-xl flex">Past</span>
+      <span class="font-bold text-xl flex darkthemewhite">Past</span>
 
-      <ul class="mt-1.5 list-none pl-0 ml-0 flex">
+      <ul class="mt-1.5 list-none pl-0 ml-0 flex darkthemewhite">
           <li>
               <div class="flex flex-1 mb-5 justify-between">
                   <span role='img' aria-label='computer'>💻 Backend Developer Internship at <strong><a href="https://30hills.com" target='_blank' rel='noopener noreferrer'>30Hills</a></strong></span><em class="text-gray-800 dark:text-gray-400 text-s pl-1">(Jun – Sep 2021)</em>
@@ -41,23 +41,23 @@
           </li>
       </ul>
 
-      <div class="font-bold mt-10 mb-5 p-3 border-b-4 border-solid border-black md:max-w-3xl md:text-xl dark:border-white">
+      <div class="font-bold mt-10 mb-5 p-3 border-b-4 border-solid border-black md:max-w-3xl md:text-xl dark:border-white darkthemewhite">
           <span class="text-2xl">🛠 Technology Stack</span>
       </div>
-      <ul style="list-style: square inside;" class="mt-1.5 mb-4 pl-0 ml-0 leading-7">
+      <ul style="list-style: square inside;" class="mt-1.5 mb-4 pl-0 ml-0 leading-7 darkthemewhite">
           <li>
               I'm currently focused on <span class="techspan border-yellow-300 ">Javascript</span> with <span class="techspan border-red-700">Angular</span>,
                I invest my spare time to practice more with <span class="techspan border-nodejs">Node.js</span>, nowadays I'm interested in <span class="techspan border-blue-600">DevOps</span> in general😄
           </li>
       </ul>
 
-      <ul style="list-style: square inside;" class="mt-1.5 pl-0 ml-0 leading-7">
+      <ul style="list-style: square inside;" class="mt-1.5 pl-0 ml-0 leading-7 darkthemewhite">
           <li>
               I know how to write Tests and Documentation for <span class="techspan border-yellow-300 ">Javascript</span>
           </li>
       </ul>
 
-      <ul style="list-style: square inside;" class="mt-1.5 pl-0 ml-0 leading-7">
+      <ul style="list-style: square inside;" class="mt-1.5 pl-0 ml-0 leading-7 darkthemewhite">
           <li>
               I'm familiar with <span class="techspan">Agile Methodologies </span>using <span class="techspan">Scrum</span>
           </li>
@@ -68,7 +68,7 @@
           What've I done so far?
       </p>
 
-      <ul style="list-style: square inside;" class="mt-1.5 pl-0 ml-0 leading-7">
+      <ul style="list-style: square inside;" class="mt-1.5 pl-0 ml-0 leading-7 darkthemewhite">
           <li>
               I worked with Salesforce Commerce Cloud powered by <span class="techspan border-yellow-300 ">Javascript</span> and <span class="techspan border-nodejs">Node.js</span>. I implemented 3rd party APIs, worked with payment instruments.
               I've worked with couple of frontend fixes⚡
@@ -85,16 +85,12 @@
               <p class="text-base font-semibold mb-3 ml-auto leading-relaxed text-indigo-800 dark:text-white">Company:<input type="text" name="" id="" placeholder="" class="ml-1 border-b-4 border-gray-300 border-solid  dark:bg-gray-900"></p>
               <p class="text-base font-semibold mb-3 pl-auto leading-relaxed text-indigo-800 dark:text-white">Email:<input type="email" name="" id="" required placeholder="johndoe@hotmail.com" class="ml-1 border-b-4 border-gray-300 border-solid dark:bg-gray-900"></p>
               <p class="text-base font-semibold mb-3 pl-auto leading-relaxed text-indigo-800 dark:text-white">Why do you want to reach me?<input type="text" required name="" id="" placeholder="" minlength='5' class=" border-b-4 border-gray-300 border-solid w-full dark:bg-gray-900"></p>
-              <button type="submit" class="flex ml-auto mt-7">Send</button>
+              <button type="submit" class="flex ml-auto mt-7 darkthemewhite">Send</button>
       </form>
-
-      <!-- Footer -->
-
-      <div class="text-sm border-t-2 border-solid border-gray-200 font-bold mt-15 pt-5 text-right">
-          © <script>document.write(/\d{4}/.exec(Date())[0])</script>
-          Ekim Başoğlu
-          <br /><a href="mailto:ekimbasoglu@hotmail.com">ekimbasoglu[at]hotmail.com ✉</a>
-      </div>
+      <app-footer></app-footer>
   </div>
   </section>
+  <div class="bottom-0 left-0 md:inline fixed darkthemewhite dark:bg-gray-900">
+    <a (click)="darkMode()" class="font-bold text-base">[dark mode]</a>
+  </div>
 </main>

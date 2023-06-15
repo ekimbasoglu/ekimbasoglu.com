@@ -8,6 +8,7 @@ import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +18,11 @@ import { HomeComponent } from './home/home.component';
     AboutComponent,
     HeaderComponent,
     HomeComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent, HeaderComponent],
+  bootstrap: [AppComponent, HeaderComponent, FooterComponent],
   exports: [HeaderComponent],
 })
 export class AppModule {}

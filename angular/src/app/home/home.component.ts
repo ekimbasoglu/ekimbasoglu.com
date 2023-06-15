@@ -8,4 +8,17 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   linkedInImage = 'assets/images/social/linkedin.png';
   title = 'Ekim Basoglu';
+  constructor() {
+    if (localStorage.getItem('dark')) {
+      document.documentElement.classList.add('dark');
+    }
+  }
+  darkMode() {
+    document.documentElement.classList.toggle('dark');
+    if (document.documentElement.classList.contains('dark')) {
+      localStorage.setItem('dark', 'true');
+    } else {
+      localStorage.removeItem('dark');
+    }
+  }
 }
