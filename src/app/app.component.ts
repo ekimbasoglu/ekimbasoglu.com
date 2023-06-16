@@ -8,9 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   colorTheme = '';
   constructor() {
+    this.colorTheme = '[dark mode]';
     if (localStorage.getItem('dark')) {
-      this.colorTheme = '[dark mode]';
       document.documentElement.classList.add('dark');
+      this.colorTheme = '[light mode]';
     }
   }
   darkMode() {

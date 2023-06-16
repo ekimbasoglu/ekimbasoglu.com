@@ -9,7 +9,6 @@ import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
-import { CountComponent } from './count/count.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { CountComponent } from './count/count.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    CountComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
