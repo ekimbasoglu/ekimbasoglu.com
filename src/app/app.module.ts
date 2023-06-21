@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { ReadMoreComponent } from './read-more/read-more.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
+    ReadMoreComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
