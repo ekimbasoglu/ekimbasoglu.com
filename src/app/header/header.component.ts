@@ -6,11 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  constructor() {
-    if (localStorage.getItem('dark')) {
-      document.documentElement.classList.add('dark');
-      document.body.classList.toggle('dark');
-    }
-  }
+
+  constructor() {}
   ngOnInit(): void {}
 }
