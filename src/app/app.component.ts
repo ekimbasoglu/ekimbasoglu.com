@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   colorTheme = '';
-  darkColorTheme = '[dark mode]';
-  lightColorTheme = '[light mode]';
+  darkColorTheme = '[dark·mode]';
+  lightColorTheme = '[light·mode]';
 
   constructor() {
     this.colorTheme = this.darkColorTheme;
