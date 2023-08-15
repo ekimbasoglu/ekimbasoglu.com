@@ -20,7 +20,7 @@ export class CountComponent {
     }
   }
   ngOnInit() {
-    this.visitorsService.getVisitorsObject().subscribe((count: any) => {
+    this.visitorsService.getVisitorsCount().subscribe((count: any) => {
       this.count = count;
       console.log('count', this.count);
     });

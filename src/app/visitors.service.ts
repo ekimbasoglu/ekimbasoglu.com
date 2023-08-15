@@ -6,13 +6,22 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class VisitorsService {
+  visitors = this.db.object<number>('visitors');
+
   constructor(private db: AngularFireDatabase) {}
 
   getVisitorsCount(): Observable<number> {
-    return this.db.object<number>('visitors').valueChanges();
+    return this.visitors.valueChanges();
   }
-  getVisitorsObject() {
-    return this.db.object<number>('visitors').valueChanges();
+  reset() {
+    this.visitors
+      .remove()
+      .then(() => {
+        console.log('Object successfully removed!');
+      })
+      .catch((error) => {
+        console.error('Error removing object:', error);
+      });
   }
 
   incrementVisitorsCount() {

@@ -14,6 +14,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { CountComponent } from './count/count.component';
+import { CountresetComponent } from './countreset/countreset.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { CountComponent } from './count/count.component';
     FooterComponent,
     ReadMoreComponent,
     CountComponent,
+    CountresetComponent,
   ],
   imports: [
     BrowserModule,
