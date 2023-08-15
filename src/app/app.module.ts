@@ -10,6 +10,10 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReadMoreComponent } from './read-more/read-more.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { environment } from '../environments/environment';
+import { CountComponent } from './count/count.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +25,16 @@ import { ReadMoreComponent } from './read-more/read-more.component';
     HomeComponent,
     FooterComponent,
     ReadMoreComponent,
+    CountComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+  ],
   providers: [],
-  bootstrap: [AppComponent, HeaderComponent, FooterComponent],
-  exports: [HeaderComponent],
+  bootstrap: [AppComponent, HeaderComponent],
+  exports: [HeaderComponent, FooterComponent],
 })
 export class AppModule {}
