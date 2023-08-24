@@ -15,6 +15,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { CountComponent } from './count/count.component';
 import { CountresetComponent } from './countreset/countreset.component';
+import { JourneyComponent } from './journey/journey.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CountresetComponent } from './countreset/countreset.component';
     ReadMoreComponent,
     CountComponent,
     CountresetComponent,
+    JourneyComponent,
   ],
   imports: [
     BrowserModule,
